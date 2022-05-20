@@ -25,14 +25,19 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+
+//Componentes de projeto
 import { NavComponent } from './components/nav/nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
 
 
 // Componentes do projeto
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +63,8 @@ import { NavComponent } from './components/nav/nav.component';
      MatTableModule,
      MatIconModule,
      MatListModule,
-     MatCardModule
+     MatCardModule,
+     BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
