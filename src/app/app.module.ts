@@ -36,6 +36,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { timeout } from 'rxjs';
 import { trigger } from '@angular/animations';
+import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 
 
 // Componentes do projeto
@@ -82,7 +83,7 @@ import { trigger } from '@angular/animations';
 
      )
   ],
-  providers: [],
+  providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
