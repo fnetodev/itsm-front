@@ -37,6 +37,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { timeout } from 'rxjs';
 import { trigger } from '@angular/animations';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
+import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 
 
 // Componentes do projeto
@@ -47,7 +48,8 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
     HomeComponent,
     HeaderComponent,
     TecnicoListComponent,
-    LoginComponent
+    LoginComponent,
+    TecnicoCreateComponent
   ],
   imports: [
     BrowserModule,
