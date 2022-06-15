@@ -38,6 +38,7 @@ import { timeout } from 'rxjs';
 import { trigger } from '@angular/animations';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 // Componentes do projeto
@@ -81,9 +82,8 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
        timeOut:4000,
        closeButton: true,
       progressBar: true
-     }
-
-     )
+     }),
+     NgxMaskModule.forRoot()
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
