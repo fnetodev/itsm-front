@@ -113,5 +113,7 @@
       }
     }
   },
-  "defaultProject": "itsm"
+  "cli": {
+    "analytics": "30da0f46-1533-4269-b98b-997335b5280b"
+  }
 }

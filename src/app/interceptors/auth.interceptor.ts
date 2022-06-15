@@ -7,7 +7,6 @@ import {
   HTTP_INTERCEPTORS
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { expressionType } from '@angular/compiler/src/output/output_ast';
 
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
