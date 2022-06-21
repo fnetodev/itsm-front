@@ -51,26 +51,30 @@ export class ChamadoListComponent implements OnInit {
 
   retornaStatus(status: any): string {
     if(status == '0') {
-      return 'ABERTO'
+      return 'Aberto'
     } else if(status == '1') {
-      return 'EM ANDAMENTO'
+      return 'Em andamento'
     } else {
-      return 'ENCERRADO'
+      return 'Encerrado'
     }
   }
 
   retornaPrioridade(prioridade: any): string {
     if(prioridade == '0') {
-      return 'BAIXA'
+      return 'Baixo'
     } else if(prioridade == '1') {
-      return 'MÉDIA'
+      return 'Médio'
     } else {
-      return 'ALTA'
+      return 'Alto'
     }
   }
 
   orderByStatus(status: any): void{
     let list: Chamado[] = []
+     if(status == '-1'){
+      this.findAll();
+     }else{
+    
     this.ELEMENT_DATA.forEach(element => {
       if(element.status == status)
         list.push(element)
@@ -79,5 +83,5 @@ export class ChamadoListComponent implements OnInit {
     this.dataSource = new MatTableDataSource<Chamado>(list);
     this.dataSource.paginator = this.paginator;
   }
-
+}
 }
