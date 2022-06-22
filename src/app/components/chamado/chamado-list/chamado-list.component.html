@@ -19,9 +19,9 @@
       <mat-radio-button (click)="orderByStatus(2)" value="2">ENCERRADO</mat-radio-button>
     </mat-radio-group>
 
-    <div class="mat-elevation-z8">
+    <div  multiTemplateDataRows class="mat-elevation-z8" >
  
-       <table mat-table [dataSource]="dataSource">
+       <table mat-table [dataSource]="dataSource"  multiTemplateDataRows>
  
           <ng-container matColumnDef="id">
              <th mat-header-cell *matHeaderCellDef> ID </th>

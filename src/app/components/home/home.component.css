@@ -1,11 +1,41 @@
-.card {
-    width: 90%;
-    margin: 1rem auto;
-    background-color: rgb(235, 235, 235);
+
+ 
+ .row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+ }
+ .card {
+   border-radius: 5px;
+   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+   padding: 30px;
+   margin: 20px;
+   transition: all 0.3s ease-out;
+   width: 200px;
+   height: 20px;
+   text-align: center;
  }
  
- img {
-    height: 15rem;
-    width: 50%;
-    margin: .8rem auto 1rem auto;
+ .card:hover {
+   transform: translateY(-5px);
+   cursor: pointer;
  }
+  
+ .card p {
+   color: #a3a5ae;
+   font-size: 16px;
+ }
+
+ .blue {
+   border-left: 3px solid #4895ff;
+ }
+  
+ .green {
+   border-left: 3px solid #3bb54a;
+ }
+  
+ .red {
+   border-left: 3px solid #b3404a;
+ }
+ 

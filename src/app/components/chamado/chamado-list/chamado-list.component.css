@@ -36,3 +36,16 @@
    justify-content: space-around;
    margin-bottom: 1rem;
 }
+
+
+tr {
+   height: 0;
+ }
+ 
+ tr:not(.example-expanded-row):hover {
+   background: whitesmoke;
+ }
+ 
+ tr:not(.example-expanded-row):active {
+   background: #efefef;
+ }
