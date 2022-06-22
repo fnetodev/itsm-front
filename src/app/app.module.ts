@@ -48,6 +48,7 @@ import { ClienteListComponent } from './components/cliente/cliente-list/cliente-
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 import { ConfiguracoesComponent } from './components/configuracoes/configuracoes.component';
+import { ChamadoUpdateComponent } from './components/chamado/chamado-update/chamado-update.component';
 
 
 // Componentes do projeto
@@ -68,7 +69,8 @@ import { ConfiguracoesComponent } from './components/configuracoes/configuracoes
     ClienteListComponent,
     ChamadoListComponent,
     ChamadoCreateComponent,
-    ConfiguracoesComponent
+    ConfiguracoesComponent,
+    ChamadoUpdateComponent
   ],
   imports: [
     BrowserModule,
