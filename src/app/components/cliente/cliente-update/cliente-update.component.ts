@@ -76,4 +76,25 @@ export class ClienteUpdateComponent implements OnInit {
     return this.nome.valid && this.cpf.valid
      && this.email.valid && this.senha.valid
   }
+
+  retornaStatus(status: any): string {
+    if(status == '0') {
+      return 'Aberto'
+    } else if(status == '1') {
+      return 'Em andamento'
+    } else {
+      return 'Encerrado'
+    }
+  }
+
+  retornaPrioridade(prioridade: any): string {
+    if(prioridade == '0') {
+      return 'Baixo'
+    } else if(prioridade == '1') {
+      return 'Médio'
+    } else {
+      return 'Alto'
+    }
+  }
+
 }
