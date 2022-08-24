@@ -2,8 +2,11 @@
 
     <h1>Listando Técnicos</h1>
  
-    <button routerLink="create" class="mat-elevation-z8" mat-stroked-button color="primary">Novo técnico</button>
- 
+    <button  routerLink="create" class="mat-elevation-z8" mat-stroked-button color="primary">
+      <i class="material-icons">add_circle</i>   
+      Novo técnico
+   </button>
+
     <mat-form-field appearance="standard">
        <mat-label>Filter</mat-label>
        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>

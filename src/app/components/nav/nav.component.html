@@ -1,4 +1,35 @@
 <mat-drawer-container class="container" autosize>
+      <div class="navbar">
+         <div class="logo-nav">
+            <img  src="assets/img/logo.png" alt="Cadastro de cliente">
+            <span class="logo-text">Serviços de TI</span>  
+         </div>
+         <a routerLink="home">
+            <i class="material-icons">home</i>
+         </a>
+         <div class="dropdown">
+           <button class="dropbtn">Processos 
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Catálogo serviço</a>
+             <a href="#">Nível de serviço</a>
+             <a routerLink="chamados">Requisição de serviço</a>
+             <a href="#">Incidente</a>
+           </div>
+         </div> 
+         
+         <div class="navbar-right">
+            <a  routerLink="configuracoes"> <i class="material-icons">settings</i></a>
+               <a (click)="logout()"> <i class="material-icons">logout</i></a>
+         </div>
+       </div>
+   <router-outlet></router-outlet>
+ </mat-drawer-container>
+
+<!--
+
+<mat-drawer-container class="container" autosize>
  
    <div class="menu">
 
@@ -9,8 +40,23 @@
       
       <a mat-button routerLink="home">
             <i class="material-icons">home</i>
-            
          </a>
+         
+         <nav mat-button class="dp-menu">
+            <ul mat-button>
+              
+               <li><a href="#">Processos</a>
+                  <ul>
+                        <li><a href="#">Gerenciamento de serviços</a></li>
+                        <li><a href="#">Gerenciamento de nível de serviço</a></li>
+                        <li><a href="#">Gerenciamento de requisição</a></li>
+                        <li><a href="#">Gerenciamento de incidente</a></li>
+                  </ul>
+               </li>
+
+            </ul>
+         </nav>
+
          <a mat-button routerLink="tecnicos">
             <i class="material-icons">account_circle</i>
             Técnicos
@@ -39,3 +85,5 @@
    
  
  </mat-drawer-container>
+
+-->
